@@ -1,10 +1,6 @@
-# 三木图书管理系统
-
-
+# TodoList
 
 # 简介
-
-
 
 TodoList 包含了较为完整的前端代码和后端代码。目前完成的技术栈是前端有 react，后端有 express+mongodb。
 
