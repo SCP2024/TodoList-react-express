@@ -1,38 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TodoList
 
-## Getting Started
+# 简介
 
-First, run the development server:
+TodoList 包含了较为完整的前端代码和后端代码。目前完成的技术栈是前端有 react，后端有 express+mongodb。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+目前这个仓库是前端部分，基于 **Next，React** 技术栈实现的。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+如果你想浏览完整的后端项目，可以访问 [后端 express](https://github.com/SCP2024/TodoList-react-express/tree/express)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### 规划
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+TodoList 系统前端实现了 **react** 版本，后端实现了 **express** 和 **mongodb** 版本。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+目前实现了简易的**TodoList**以及基于**token**的登陆验证功能。设想中实现用户区分管理员和普通用户两种身份的功能，目前尚未实现，未来可能添加。
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 搭配后端启动
 
-## Learn More
+请访问 [[后端 express](https://github.com/SCP2024/TodoList-react-express/tree/express)]。它是对应的服务端代码，基于 **express、mongoodb** 技术栈实现的。关于后端项目如何启动，详情查看服务端的仓库介绍。
 
-To learn more about Next.js, take a look at the following resources:
+# 启动
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+1. 下载代码，终端进入该项目目录下
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. 下载依赖包，执行
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```
+   npm install
+   ```
+
+3. 若期望连接 nodejs 的本地服务，打开根目录下的 next.config.js 文件，确认以下代码不在注释中
+
+   ```
+   destination: `http://localhost:3005/api/:path*`,
+   ```
+
+4. 运行项目
+
+   ```
+   npm run dev
+   ```
+
+5. 访问 localhost:3000/login
+
+6. 页面成功显示，则表示启动成功
