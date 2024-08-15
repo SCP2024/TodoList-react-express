@@ -22,8 +22,7 @@ TodoList 系统前端实现了 **react** 版本，后端实现了 **express** �
 
 ## 安装 nodejs
 
-1. 安装 nodejs，版本 >= 14，(NodeJs 安装)[https://nodejs.org/en]
-
+1. 安装 nodejs，版本 >= 14，[NodeJs安装](https://nodejs.org/en)
 ## 启动后端项目
 
 1. 下载依赖包，执行
