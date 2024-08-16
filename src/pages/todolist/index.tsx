@@ -178,7 +178,7 @@ export default function TodoList() {
         <Space>
           <Button
             type="link"
-            onClick={() => { handleTodoEdit(row._id) }}>  // 编辑按钮
+            onClick={() => { handleTodoEdit(row._id) }}>
             编辑
           </Button>
           <Button
@@ -188,7 +188,7 @@ export default function TodoList() {
               handleStatusChange(row);  // 切换状态
             }}
           >
-            {row.status === STATUS.NOT_DONE ? "完成" : "取消完成"}  // 根据当前状态显示按钮文本
+            {row.status === STATUS.NOT_DONE ? "完成" : "取消完成"}
           </Button>
           <Button type="link" danger
             onClick={() => {
@@ -220,17 +220,17 @@ export default function TodoList() {
         <Row gutter={24}>
           <Col span={8}>
             <Form.Item name="todo" label="事项">
-              <Input placeholder="请输入" allowClear />  // 输入框，用于输入搜索条件
+              <Input placeholder="请输入" allowClear /> 
             </Form.Item>
           </Col>
           <Col span={8}>
             <Form.Item name="status" label="状态">
-              <Select placeholder="请选择" options={STATUS_OPTIONS} allowClear></Select>  // 状态下拉菜单，用于筛选待办事项状态
+              <Select placeholder="请选择" options={STATUS_OPTIONS} allowClear></Select>
             </Form.Item>
           </Col>
           <Col span={4}>
             <Form.Item>
-              <Button type="primary" htmlType="submit">  // 搜索按钮
+              <Button type="primary" htmlType="submit">
                 搜索
               </Button>
             </Form.Item>
