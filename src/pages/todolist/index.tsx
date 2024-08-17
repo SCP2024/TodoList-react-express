@@ -73,7 +73,7 @@ export default function TodoList() {
   async function fetchData(search?: TodoListQueryType) {
     const res = await getTodoList({
       current: pagination.current,  // 获取当前页码
-      pageSize: pagination.pageSize,  // 获取每页显示条数
+      pageSize: 100,  // 获取每页显示条数
       ...search,  // 添加搜索条件
     });
     const { data } = res;  // 解构数据
